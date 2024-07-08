@@ -39,7 +39,7 @@ export function Header() {
             <Container size="md" className={classes.inner}>
                 
                 <Link href="/"><img src="/logo.png" alt="Tornado Cash" className={classes.logo} /></Link>
-                <Group gap={0} visibleFrom={opened ? "": "sm"} style={{ marginRight: '100px' }}>
+                <Group gap={0} visibleFrom={opened ? "": "sm"} style={{ marginRight: '50px' }}>
                     {items}
                 </Group>
 
