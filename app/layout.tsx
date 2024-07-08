@@ -4,7 +4,7 @@ import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { WalletContextProvider } from "../components/providers";
 import { theme } from "../theme";
 
-import "./global.css";
+import "./globals.css";
 
 export const metadata = {
   title: "Tornado Cash",
@@ -16,11 +16,11 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en">
       <head>
         <ColorSchemeScript />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <link rel="shortcut icon" href="/favicon.svg" />
       </head>
       <body>
         <MantineProvider theme={theme}>

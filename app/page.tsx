@@ -6,9 +6,11 @@ import { Notification } from '../components/Notification/Notification';
 import { DepositWithdraw } from '../components/DepositWithdraw/DepositWithdraw';
 import { Stats } from '../components/Stats/Stats';
 
+import classes from './Home.module.css';
+
 export default function HomePage() {
   return (
-    <>
+    <div className={classes.wrapper}>
       <Notification message="Please, do not use Binance wallet addresses for withdrawals. Internal transactions (including Tornado.cash withdrawals) are not supported on Binance Exchange. Accounts associated with Tornado.cash are suspended."/>
       <Notification message="After the OFAC sanctions most RPC endpoints have censored deposits, make sure your wallet is manually configured to a working endpoint. See options on Tornado RPC and how to configure MetaMask" />
       <Container size="md">
@@ -17,6 +19,7 @@ export default function HomePage() {
           <Stats />
         </Group>
       </Container>
-    </>
+      <div className={classes.push}></div>
+    </div>
   )
 }

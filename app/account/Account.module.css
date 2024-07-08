@@ -1,0 +1,13 @@
+.container {
+    margin-top: 20px;
+    font-family: 'PT Mono', monospace;
+}
+
+.wrapper {
+    min-height: 88%;
+    margin-bottom: -25px;
+}
+
+.push {
+    height: 50px;
+}

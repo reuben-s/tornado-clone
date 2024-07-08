@@ -19,13 +19,12 @@ type WalletContextType = {
 
 const defaultContextValue: WalletContextType = {
     wallet: { wallet: { selectedWallet: null, userAccount: null }, stats: null },
-    setWallet: undefined, // This will be overridden by the actual function when using the Provider
+    setWallet: undefined,
 };
 
 export const WalletContext = createContext(defaultContextValue);
 
 export function WalletContextProvider({ children }: { children: React.ReactNode }) {
-    // Update the state initialization to use statsData
     const [wallet, setWallet] = useState<Wallet>({ wallet: { selectedWallet: null, userAccount: null }, stats: null });
 
     return (
