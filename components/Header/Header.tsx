@@ -37,6 +37,7 @@ export function Header() {
     return (
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
+                
                 <Link href="/"><img src="/logo.png" alt="Tornado Cash" className={classes.logo} /></Link>
                 <Group gap={0} visibleFrom={opened ? "": "sm"} style={{ marginRight: '100px' }}>
                     {items}

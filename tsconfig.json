@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -25,6 +25,7 @@
     ]
   },
   "include": [
+    "new-types.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

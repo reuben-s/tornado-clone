@@ -71,7 +71,7 @@ export function Stats() {
 
         // Call the fetch function
         fetchData();
-    }, [setWallet]); // Dependency array, ensures useEffect runs only once after the component mounts
+    }, [setWallet, wallet.wallet.selectedWallet, wallet.wallet.userAccount]); // Dependency array, ensures useEffect runs only once after the component mounts
 
     // Inside your Stats component
     return (
