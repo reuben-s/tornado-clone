@@ -16,9 +16,9 @@
     padding-top: 0px;
     border-radius: 4px;
 
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Spread items evenly */
+    display: flex !important;
+    align-items: center !important; /* Align items vertically */
+    justify-content: space-between !important; /* Spread items evenly */
 }
 
 .connectButton {

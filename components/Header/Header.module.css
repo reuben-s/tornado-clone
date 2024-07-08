@@ -64,35 +64,35 @@
 
 .metamaskButton {
     background-color: #242424; /* Background color of the box */
-    border: 1px solid #666; /* Border color of the box */
+    border: 1px solid #666 !important; /* Border color of the box */
     border-radius: 4px; /* Rounded corners of the box */
-    padding: 10px; /* Padding inside the box around the icon */
-    display: inline-block; /* Ensures the styling applies correctly */
-    width: 40px; /* Set both width and height to the same value */
-    height: 40px; /* This makes the container a square */
-    object-fit: contain; /* Adjust this as needed to fit the icon */
+    padding: 10px !important; /* Padding inside the box around the icon */
+    display: inline-block !important; /* Ensures the styling applies correctly */
+    width: 40px !important; /* Set both width and height to the same value */
+    height: 40px !important; /* This makes the container a square */
+    object-fit: contain !important; /* Adjust this as needed to fit the icon */
 }
 
 .metamaskButtonConnected {
-    background-color: #2d2419;
-    border: 1px solid #f89c35; /* Border color of the box */
+    background-color: #2d2419 !important; /* Background color of the box */
+    border: 1px solid #f89c35 !important; /* Border color of the box */
     border-radius: 4px; /* Rounded corners of the box */
-    padding: 10px; /* Padding inside the box around the icon */
-    display: inline-block; /* Ensures the styling applies correctly */
-    width: 40px; /* Set both width and height to the same value */
-    height: 40px; /* This makes the container a square */
-    object-fit: contain; /* Adjust this as needed to fit the icon */
+    padding: 10px !important; /* Padding inside the box around the icon */
+    display: inline-block !important; /* Ensures the styling applies correctly */
+    width: 40px !important; /* Set both width and height to the same value */
+    height: 40px !important; /* This makes the container a square */
+    object-fit: contain !important; /* Adjust this as needed to fit the icon */
 }
 
 .walletButton {
-    background-color: #242424; /* Background color of the box */
-    border: 1px solid #666; /* Border color of the box */
+    background-color: #242424 !important; /* Background color of the box */
+    border: 1px solid #666 !important; /* Border color of the box */
     border-radius: 4px; /* Rounded corners of the box */
-    padding: 10px; /* Padding inside the box around the icon */
-    display: inline-block; /* Ensures the styling applies correctly */
-    width: 40px; /* Set both width and height to the same value */
-    height: 40px; /* This makes the container a square */
-    object-fit: contain; /* Adjust this as needed to fit the icon */
+    padding: 10px !important; /* Padding inside the box around the icon */
+    display: inline-block !important; /* Ensures the styling applies correctly */
+    width: 40px !important; /* Set both width and height to the same value */
+    height: 40px !important; /* This makes the container a square */
+    object-fit: contain !important; /* Adjust this as needed to fit the icon */
 }
 
 .metamaskImageConnected {
