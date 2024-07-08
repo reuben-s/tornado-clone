@@ -1,0 +1,134 @@
+.header {
+    margin-top: rem(30px);
+    font-family: "PT Mono", monospace;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        margin-bottom: rem(55px);
+    }
+
+    @mixin hover {
+        cursor: pointer;
+    }
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spread items evenly */
+}
+
+.docsIcon {
+    filter: invert(83%) sepia(32%) saturate(482%) hue-rotate(83deg) brightness(105%) contrast(102%);
+    width: 13px;
+    margin-right: 3px;
+}
+
+.logo {
+    width: rem(175px);
+    margin-left: -20px;
+}
+
+.link {
+    display: block;
+    line-height: 1;
+    padding: rem(8px) rem(12px);
+    border-radius: var(--mantine-radius-sm);
+    text-decoration: none;
+    color: var(--mantine-color-gray-0);
+    font-size: var(--mantine-font-size-sm);
+    font-weight: 500;
+
+    @mixin hover {
+        color: #94febf;
+    }
+}
+
+.ethContainer {
+    display: flex;
+    align-items: center;
+    background-color: #242424; /* Example background color */
+    border-radius: 4px; /* Optional: for rounded corners */
+}
+
+.ethIcon {
+    background-color: #0f1f19; /* Background color of the box */
+    border: 1px solid #94febf; /* Border color of the box */
+    border-radius: 4px; /* Rounded corners of the box */
+    padding: 10px; /* Padding inside the box around the icon */
+    display: inline-block; /* Ensures the styling applies correctly */
+    width: 40px; /* Set both width and height to the same value */
+    height: 40px; /* This makes the container a square */
+    object-fit: contain; /* Adjust this as needed to fit the icon */
+}
+
+.metamaskButton {
+    background-color: #242424; /* Background color of the box */
+    border: 1px solid #666; /* Border color of the box */
+    border-radius: 4px; /* Rounded corners of the box */
+    padding: 10px; /* Padding inside the box around the icon */
+    display: inline-block; /* Ensures the styling applies correctly */
+    width: 40px; /* Set both width and height to the same value */
+    height: 40px; /* This makes the container a square */
+    object-fit: contain; /* Adjust this as needed to fit the icon */
+}
+
+.metamaskButtonConnected {
+    background-color: #2d2419;
+    border: 1px solid #f89c35; /* Border color of the box */
+    border-radius: 4px; /* Rounded corners of the box */
+    padding: 10px; /* Padding inside the box around the icon */
+    display: inline-block; /* Ensures the styling applies correctly */
+    width: 40px; /* Set both width and height to the same value */
+    height: 40px; /* This makes the container a square */
+    object-fit: contain; /* Adjust this as needed to fit the icon */
+}
+
+.walletButton {
+    background-color: #242424; /* Background color of the box */
+    border: 1px solid #666; /* Border color of the box */
+    border-radius: 4px; /* Rounded corners of the box */
+    padding: 10px; /* Padding inside the box around the icon */
+    display: inline-block; /* Ensures the styling applies correctly */
+    width: 40px; /* Set both width and height to the same value */
+    height: 40px; /* This makes the container a square */
+    object-fit: contain; /* Adjust this as needed to fit the icon */
+}
+
+.metamaskImageConnected {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(25%) saturate(7172%) hue-rotate(334deg) brightness(99%) contrast(96%);
+}
+
+.walletIcon {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(17%) saturate(0%) hue-rotate(296deg) brightness(90%) contrast(86%);
+}
+
+.settingsButton {
+    height: 40px;
+    background-color: #0f1f19; /* Background color of the box */
+    border: 1px solid #94febf; /* Border color of the box */
+    color: #94febf;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex; /* Changed from inline to inline-flex */
+    align-items: center; /* Add this line to vertically center contents */
+    justify-content: center; /* Centers the content horizontally */
+    padding-right: 20px; /* Padding inside the box around the icon */
+
+    @mixin hover {
+        background-color: #94febf;
+        color: #0f1f19;
+    }
+
+    &:hover .settingsIcon {
+        filter: grayscale(100%);
+    }
+}
+
+.settingsIcon {
+    padding: 10px; /* Padding inside the box around the icon */
+    margin-left: 10px;
+    width: 40px; /* Set both width and height to the same value */
+    height: 40px; /* This makes the container a square */
+    filter: invert(83%) sepia(49%) saturate(323%) hue-rotate(81deg) brightness(101%) contrast(99%);
+}

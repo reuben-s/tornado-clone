@@ -1,0 +1,18 @@
+.info {
+    background-color: #94febf;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 4px;
+    width: 15px;
+}
+
+.infoIcon {
+    width: 8px;
+    height: 8px;
+}
+
+.dropdown {
+    background-color: #94febf;
+    color: #000403;
+    border: none;
+}

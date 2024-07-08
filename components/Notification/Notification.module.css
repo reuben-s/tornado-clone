@@ -1,0 +1,49 @@
+.notificationContainer {
+    position: relative; /* Ensure this is here to position the triangle relative to the container */
+    margin-top: 20px; /* Adjust this value to make space for the triangle */
+    border: 1px solid #ff8a00;
+    border-radius: 6px;
+    padding: 10px; /* Add padding to your content */
+    overflow: hidden; /* Hide overflow */
+}
+
+.eyeContainer::before {
+    content: "";
+    position: absolute;
+    transform: skewX(20deg);
+    background-color: #1a1203;
+    border-right: 1px solid #ff8a00;
+    top: -1px;
+    bottom: -1px;
+    border-top-right-radius: 2px;
+    left: -50%;
+    right: -.2rem;
+    margin-right: 94%;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        margin-right: 91%;
+    }
+}
+
+.notificationContent {
+    margin-left: 8%;
+    margin-right: -10px;
+    width: 87%;
+    text-align: center;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        margin-left: 12%;
+        width: 85%;
+    }
+}
+
+.eyeIcon {
+    position: absolute; /* or 'absolute' depending on your layout needs */
+    width: 22px;
+    margin-left: 0.7%;
+    z-index: 1; /* Higher z-index value to bring it to the front */
+}
+
+.closeButton {
+    font-size: 30px;
+}

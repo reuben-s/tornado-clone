@@ -1,0 +1,40 @@
+.container {
+    margin-top: 20px;
+    width: 80%;
+    background-color: #171717;
+    border-radius: 4px;
+}
+
+.connected {
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 4px;
+}
+
+.connect {
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spread items evenly */
+}
+
+.connectButton {
+    height: 40px;
+    background-color: #0f1f19; /* Background color of the box */
+    border: 1px solid #94febf; /* Border color of the box */
+    color: #94febf;
+
+    @mixin hover {
+        background-color: #94febf;
+        color: #0f1f19;
+    }
+}
+
+.address {
+    @media (max-width: $mantine-breakpoint-md) {
+        font-size: 12px;
+    }
+}

@@ -1,11 +1,14 @@
+require('dotenv').config();
 import "@mantine/core/styles.css";
-import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { WalletContextProvider } from "../components/providers";
 import { theme } from "../theme";
 
+import "./global.css";
+
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
+  title: "Tornado Cash",
+  description: "Tornado Cash is a fully decentralized protocol for private transactions on Ethereum.",
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -13,14 +16,18 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en">
       <head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <link rel="shortcut icon" href="/favicon.svg" />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <WalletContextProvider>
+            {children}
+          </WalletContextProvider>
+        </MantineProvider>
       </body>
     </html>
   );
